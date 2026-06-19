@@ -19,7 +19,15 @@ export function Navigation() {
         </Link>
         <nav className="ml-8 hidden md:flex gap-6 text-sm">
           <Link href="/" className={linkClass('/')}>Home</Link>
-          <Link href="/pdf-tools" className={linkClass('/pdf-tools')}>PDF Tools</Link>
+          <div className="relative group">
+            <Link href="/pdf-tools" className={`flex items-center gap-1 ${linkClass('/pdf-tools')}`}>
+              PDF Tools
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+            </Link>
+            <div className="absolute left-0 top-full mt-2 w-48 bg-white border border-slate-200 rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50 overflow-hidden">
+               <Link href="/pdf-tools" className="block px-4 py-3 text-sm text-slate-600 hover:bg-slate-50 hover:text-indigo-600 font-medium">Merge PDF</Link>
+            </div>
+          </div>
           <Link href="/image-tools" className={linkClass('/image-tools')}>Image Tools</Link>
           <Link href="/converters" className={linkClass('/converters')}>Converters</Link>
         </nav>

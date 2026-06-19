@@ -8,15 +8,8 @@ export default function PdfTools() {
   const [viewMode, setViewMode] = useState<'ui' | 'prd'>('ui');
   const [files, setFiles] = useState<File[]>([]);
   const [isMerging, setIsMerging] = useState(false);
-  const [processedCount, setProcessedCount] = useState(4218904);
+  const [processedCount, setProcessedCount] = useState(1);
   const fileInputRef = useRef<HTMLInputElement>(null);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setProcessedCount(prev => prev + Math.floor(Math.random() * 3));
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files) {
@@ -184,7 +177,7 @@ export default function PdfTools() {
                    </li>
                    <li className="flex gap-3">
                      <span className="flex-shrink-0 w-6 h-6 rounded-full bg-white/10 text-xs flex items-center justify-center font-bold">03</span>
-                     <p className="text-xs text-slate-400">Click 'Merge Files' and wait for your result.</p>
+                     <p className="text-xs text-slate-400">Click &apos;Merge Files&apos; and wait for your result.</p>
                    </li>
                    <li className="flex gap-3">
                      <span className="flex-shrink-0 w-6 h-6 rounded-full bg-white/10 text-xs flex items-center justify-center font-bold">04</span>

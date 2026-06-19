@@ -7,7 +7,7 @@ export default function Home() {
       <section className="col-span-12 md:col-span-8 row-span-6 bg-white border border-slate-200 rounded-3xl shadow-sm p-8 md:p-12 flex flex-col justify-center items-start relative overflow-hidden">
          <div className="absolute top-0 right-0 w-96 h-96 bg-indigo-50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
          <h1 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight z-10 leading-tight">All your documents,<br/>mastered in one place.</h1>
-         <p className="text-lg text-slate-500 mb-10 max-w-xl z-10">UniTools provides a professional suite of utilities to merge PDFs, convert files, and edit images rapidly and securely entirely in your browser.</p>
+         <p className="text-lg text-slate-500 mb-10 max-w-xl z-10">Abhi Tools Hub provides a professional suite of utilities to merge PDFs, convert files, and edit images rapidly and securely entirely in your browser.</p>
          <Link href="/pdf-tools" className="bg-indigo-600 text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-lg shadow-indigo-100 hover:scale-105 active:scale-95 transition-transform z-10 inline-flex">
            Explore PDF Tools
          </Link>

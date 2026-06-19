@@ -3,7 +3,7 @@ import './globals.css';
 import { Navigation } from '@/components/Navigation';
 
 export const metadata: Metadata = {
-  title: 'UniTools Platform',
+  title: 'Abhi Tools Hub',
   description: 'Merge, Convert, and Edit Files online',
 };
 

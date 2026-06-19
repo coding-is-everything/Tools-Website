@@ -41,7 +41,7 @@ export default function PdfTools() {
       const url = URL.createObjectURL(blob);
       const link = document.createElement('a');
       link.href = url;
-      link.download = `UniTools_Merged_${Date.now()}.pdf`;
+      link.download = `AbhiToolsHub_Merged_${Date.now()}.pdf`;
       link.click();
       URL.revokeObjectURL(url);
       setProcessedCount(prev => prev + files.length);
@@ -197,7 +197,7 @@ export default function PdfTools() {
              <section className="col-span-12 md:col-span-12 md:row-span-1 bg-white border border-slate-200 rounded-3xl px-8 py-5 flex flex-col md:flex-row items-start md:items-center justify-between shadow-sm gap-4">
                <div className="flex flex-wrap gap-8">
                  <div className="text-xs">
-                   <p className="font-bold text-slate-400 uppercase mb-1 tracking-wider">Why UniTools?</p>
+                   <p className="font-bold text-slate-400 uppercase mb-1 tracking-wider">Why Abhi Tools Hub?</p>
                    <p className="text-slate-600 font-medium">Free, Fast, Private</p>
                  </div>
                  <div className="text-xs">

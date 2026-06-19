@@ -1,0 +1,8 @@
+{
+  "name": "Merge PDF Architecture Document",
+  "description": "Comprehensive Product Requirement Document (PRD) and Technical Specification for an enterprise-grade Merge PDF SaaS tool.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
